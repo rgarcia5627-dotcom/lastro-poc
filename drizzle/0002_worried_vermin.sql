@@ -1,0 +1,1 @@
+ALTER TABLE "payments" ADD COLUMN "snapshot_at" timestamp with time zone;

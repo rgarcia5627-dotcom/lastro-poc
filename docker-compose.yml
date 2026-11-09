@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: lastro
+      POSTGRES_PASSWORD: lastro
+      POSTGRES_DB: lastro
+    ports:
+      - "5433:5432"
+    volumes:
+      - lastro-db:/var/lib/postgresql/data
+volumes:
+  lastro-db:
